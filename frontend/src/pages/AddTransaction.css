@@ -1,0 +1,159 @@
+
+.add-transaction-page {
+  width: 100%;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.add-transaction-card {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.back-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 25px;
+  padding: 8px 0;
+  border: none;
+  background: transparent;
+  color: #4f46e5;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  color: #3730a3;
+}
+
+.transaction-heading {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 28px;
+  color: #4f46e5;
+}
+
+.transaction-heading h2 {
+  margin: 0;
+  color: #1f2937;
+  font-size: 25px;
+}
+
+.transaction-heading p {
+  margin: 6px 0 0;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.add-transaction-card form label {
+  display: block;
+  margin-bottom: 8px;
+  color: #374151;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.add-transaction-card form input,
+.add-transaction-card form select {
+  width: 100%;
+  padding: 13px;
+  margin-bottom: 20px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  outline: none;
+  background: #ffffff;
+  color: #1f2937;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.add-transaction-card form input:focus,
+.add-transaction-card form select:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+}
+
+.transaction-type-buttons {
+  display: flex;
+  gap: 12px;
+  margin: 10px 0 22px;
+}
+
+.type-button {
+  flex: 1;
+  padding: 12px;
+  border-radius: 8px;
+  background: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.type-button.income {
+  border: 1px solid #16a34a;
+  color: #16a34a;
+}
+
+.type-button.income.active {
+  background: #16a34a;
+  color: #ffffff;
+}
+
+.type-button.expense {
+  border: 1px solid #dc2626;
+  color: #dc2626;
+}
+
+.type-button.expense.active {
+  background: #dc2626;
+  color: #ffffff;
+}
+
+.save-transaction-button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background: #4f46e5;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.save-transaction-button:hover {
+  background: #3730a3;
+}
+
+.save-transaction-button:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+
+.transaction-error {
+  margin-bottom: 15px;
+  color: #dc2626;
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  .add-transaction-page {
+    padding: 15px;
+  }
+
+  .add-transaction-card {
+    padding: 20px;
+  }
+
+  .transaction-heading h2 {
+    font-size: 21px;
+  }
+}

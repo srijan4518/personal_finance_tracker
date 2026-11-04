@@ -1,0 +1,209 @@
+
+.transactions-page {
+  padding: 25px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.transactions-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.transactions-heading h1 {
+  margin: 0;
+  font-size: 28px;
+  color: #1f2937;
+}
+
+.transactions-heading p {
+  margin-top: 8px;
+  color: #6b7280;
+}
+
+.transaction-heading-icon {
+  background: #eef2ff;
+  color: #4f46e5;
+  padding: 15px;
+  border-radius: 12px;
+}
+
+.transaction-filters {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 22px;
+}
+
+.transaction-search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  padding: 0 14px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 9px;
+  color: #6b7280;
+}
+
+.transaction-search input {
+  width: 100%;
+  padding: 13px 0;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.transaction-filters select {
+  padding: 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 9px;
+  background: white;
+  outline: none;
+}
+
+.transactions-table-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
+}
+
+.transactions-table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.transactions-table-header h3 {
+  margin: 0;
+  color: #1f2937;
+}
+
+.transactions-table-header span {
+  color: #6b7280;
+  font-size: 13px;
+}
+
+.transaction-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.edit-transaction-button,
+.delete-transaction-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.edit-transaction-button {
+  background: #eef2ff;
+  color: #4f46e5;
+}
+
+.delete-transaction-button {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.transaction-income-amount {
+  color: #16a34a;
+  font-weight: 600;
+}
+
+.transaction-expense-amount {
+  color: #dc2626;
+  font-weight: 600;
+}
+
+@media (max-width: 700px) {
+  .transactions-page {
+    padding: 15px;
+  }
+
+  .transaction-filters {
+    flex-direction: column;
+  }
+
+  .transactions-table-card {
+    padding: 12px;
+  }
+}
+.edit-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.edit-modal {
+  background: white;
+  padding: 28px;
+  border-radius: 14px;
+  width: 100%;
+  max-width: 450px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.edit-modal h2 {
+  margin-bottom: 20px;
+}
+
+.edit-modal form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.edit-modal label {
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+.edit-modal input,
+.edit-modal select {
+  padding: 11px;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+  font-size: 14px;
+  width: 100%;
+}
+
+.edit-modal-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.edit-save-btn,
+.edit-cancel-btn {
+  flex: 1;
+  padding: 11px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.edit-save-btn {
+  background: #2563eb;
+  color: white;
+}
+
+.edit-cancel-btn {
+  background: #e5e7eb;
+  color: #333;
+}
