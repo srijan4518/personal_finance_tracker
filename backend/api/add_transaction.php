@@ -5,7 +5,7 @@ require_once "../includes/auth.php";
 
 auth();
 
-// Allow only POST requests
+
 if ($_SERVER["REQUEST_METHOD"] !== "POST") {
     out([
         "success" => false,
